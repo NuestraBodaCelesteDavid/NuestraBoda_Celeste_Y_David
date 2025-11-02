@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const secondsElement = document.getElementById('seconds');
   
   // Fecha objetivo: 18 de DICIEMBRE de 2025
-  const targetDate = new Date(2025, 11, 18, 0, 0, 0);
+  const targetDate = new Date(2025, 11, 20, 0, 0, 0);
   
   let isInteractionDetected = false;
 
@@ -236,3 +236,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 });
+
