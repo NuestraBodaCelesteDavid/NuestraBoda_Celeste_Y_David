@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, duration * 1000);
     }
     
-    setInterval(createFallingFlower, 350);
+    setInterval(createFallingFlower, 420);
     
     for (let i = 0; i < 40; i++) {
       setTimeout(createFallingFlower, i * 50);
@@ -236,6 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 });
+
 
 
 
