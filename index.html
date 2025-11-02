@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Audio -->
+  <audio id="background-music" loop hidden>
+    <source src="./media/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Bloque 1: Intro con flores -->
+  <section class="block" id="block-intro">   
+    
+    <!-- Flores estáticas de fondo - MUCHAS MÁS -->
+    <div class="static-flowers" id="static-flowers"></div>
+    
+    <!-- Lluvia constante de flores -->
+    <div class="flower-rain" id="flower-rain"></div>
+    
+    <!-- Imagen de anillos -->
+    <div class="rings-container">
+      <img src="./media/anillos.svg" alt="Anillos de boda" class="rings-image">
+    </div>
+    
+    <!-- Instrucción -->
+    <div class="instruction-container">
+      <div class="blow-text">CLICK AQUI</div>
+      <div class="click-text">para revelar la invitación</div>
+    </div>
+  </section>
+
+  <!-- Bloque 2: Invitación principal -->
+  <section class="block hidden" id="block-invitation">
+    <!-- La lluvia de flores continúa aquí -->
+    <div class="flower-rain" id="flower-rain-main"></div>
+    
+    <!-- Tu contenido existente de invitación -->
+    <div class="date-title-container">
+      <h1 class="date-title">18 de Diciembre del 2025</h1>
+    </div>
+    
+    <!-- CONTADOR ELEGANTE NUEVO -->
+    <div class="countdown-container">
+      <div class="countdown-elegant">
+        <div class="time-unit-elegant">
+          <div class="time-value-elegant" id="days">00</div>
+          <div class="time-label-elegant">Días</div>
+        </div>
+        <div class="separator-elegant">:</div>
+        <div class="time-unit-elegant">
+          <div class="time-value-elegant" id="hours">00</div>
+          <div class="time-label-elegant">Horas</div>
+        </div>
+        <div class="separator-elegant">:</div>
+        <div class="time-unit-elegant">
+          <div class="time-value-elegant" id="minutes">00</div>
+          <div class="time-label-elegant">Minutos</div>
+        </div>
+        <div class="separator-elegant">:</div>
+        <div class="time-unit-elegant">
+          <div class="time-value-elegant" id="seconds">00</div>
+          <div class="time-label-elegant">Segundos</div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Imagen principal -->
+    <img src="./media/imagen_1.gif" alt="Invitación de boda" class="invitation-img">
+    <img src="./media/imagen_2.gif" alt="Imagen 2" class="invitation-img">
+
+    <!-- Carrusel 3D Minimalista -->
+    <div class="carousel-3d-container">
+      <div class="carousel-3d">
+        <div class="carousel-slide">
+          <img src="./media/carousel6.jpg" alt="Imagen 6">
+        </div>
+        <div class="carousel-slide">
+          <img src="./media/carousel7.jpg" alt="Imagen 7">
+        </div>
+        <div class="carousel-slide">
+          <img src="./media/carousel8.jpg" alt="Imagen 8">
+        </div>
+        <div class="carousel-slide">
+          <img src="./media/carousel9.jpg" alt="Imagen 9">
+        </div>        
+      </div>
+    </div>
+
+    <!-- imagen_3 misa -->
+    <img src="./media/imagen_3.gif" alt="Imagen 3" class="invitation-img">
+
+    <div class="location-container">
+      <button class="location-button" onclick="window.open('https://www.google.com/maps/search/avenida+prolongacion+la+condesa+%2326/@22.7577628,-102.4984215,19.5z?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D', '_blank')">
+        📍 Click para ver la ubicación de la recepción
+      </button>
+    </div>
+
+    <!-- Carrusel 2 -->
+    <div class="carousel-3d-container">
+      <div class="carousel-3d">
+        <div class="carousel-slide">
+          <img src="./media/carousel1.jpg" alt="Imagen 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="./media/carousel2.jpg" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="./media/carousel3.jpg" alt="Imagen 3">
+        </div>        
+      </div>
+    </div>
+    
+     <!-- imagen_4 recepcion -->
+    <img src="./media/imagen_4.gif" alt="Imagen 4" class="invitation-img">    
+
+    <!-- imagen_5 carta -->
+    <img src="./media/imagen_5.gif" alt="Imagen 5" class="invitation-img">
+    
+    
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
